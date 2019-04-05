@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body class="bg-dark">
+<div id="main-connexion">
+    <title>{{ title }}</title>
+
+    <form method="POST" action="{{ path_for('login') }}">
+        <label for="email" >Adresse email</label>
+        <input type="email" id="email" name="email" placeholder="Votre adresse mail">
+        <label for="mdp" >Mot de passe</label>
+        <input type="password" id="mdp" name="password"  placeholder="Votre mot de passe">
+        <input type="submit" value="Connexion">
+    </form>
+
+    <p>Identifiant: petitjean.elise@voila.fr - Mdp: pwDeschamps</p>
+    <p>Identifiant: Leroy.A@yahoo.fr - Mdp: pwLeroy</p>
+    <p>Identifiant: Aubert.J@dbmail.com - Mdp: pwAubert</p>
+
+</div>
+</body>
+</html>
